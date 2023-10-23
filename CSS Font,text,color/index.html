@@ -17,6 +17,7 @@
             font-weight: bolder;
             font-size: 50px;
             text-decoration: underline;
+            text-align: center;
         }
         p{
             /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
@@ -27,7 +28,20 @@
         h2{
             text-transform: capitalize;
             text-decoration: underline;
+            /* text-decoration-style: wavy ; */
             text-decoration-color: red;
+            text-decoration-thickness:12px;
+            /* text-indent: 45px; */
+            width: 45px;
+            text-overflow: ellipsis;
+        }
+        .lorem{
+            border: 2px solid green;
+            width: 145px;
+            word-break: break-all;
+            /* text-overflow: ellipsis; */
+            /* text-overflow: clip;
+            overflow: hidden; if element is overflowing from box then hide it */
         }
     </style>
 </head>
@@ -36,7 +50,7 @@
         <h1>Fonts</h1>
         <h2>What is this</h2>
         <p>This is a font</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste unde odit pariatur consectetur animi neque culpa tenetur similique. Corporis sunt amet, quae ad eveniet earum molestias molestiae, deleniti saepe delectus magni vel quaerat rem voluptate dolorum dolorem sint dicta similique consectetur accusantium ipsa maiores tempore!</p>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste unde odit pariatur consectetur animi neque culpa tenetur similique. Corporis sunt amet, quae ad eveniet earum molestias molestiae, deleniti saepe delectus magni vel quaerat rem voluptate dolorum dolorem sint dicta similique consectetur accusantium ipsa maiores tempore!</p>
     </div>
 </body>
 </html>
