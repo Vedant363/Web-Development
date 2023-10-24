@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1 */
+        h1{
+            color: cyan;
+        }
+        /* while using same selector last one will be applied */
+        /* else specificity order is : Inline > ID> Class/Attribute > Element > Universal */
+        /* Origin */
+        /* Important most priority than everyone else */
+        /* calculation
+        U - 0
+        E - 1
+        C/A/pseudo class - 10
+        ID - 100
+        Inline - 1000 */
+        /* !important - 10000 */
+        /* 10 */
+        .cred{
+            color: red;
+        }
+        /* 10 */
+        .cpurple{
+            color: purple;
+        }
+        /* 1+10 = 11 */
+        h1.yellow{
+            /* color: yellow !important; */
+            color: yellow;
+        }
+        /* Attribute selector - 10 */
+        [data-x=a]{
+            background-color: black;
+            color: green;
+        }
+
+        /*1+10+10+10+10 = 41*/
+        a.sampleclass.another-class[href]:hover{
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+</html>
