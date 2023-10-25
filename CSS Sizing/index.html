@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*html is root element*/
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1366px; */
+            width: 80vw;/*viewport width*/
+            height: 10vh;
+            margin: auto;/*left right width automatically adjust brings it in center (Not for inline element)*/
+            background-color: aqua;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1366px; */
+            width: 80vw;/*viewport width*/
+            min-height: 80vh;
+            /* height: 80vh; */
+            margin: 23px auto;
+            /* font-size: 18px; 16px default */
+            background-color: aqua;
+        }
+        .container > div{
+            /*How much it will get after inheriting form parent x 2 times*/
+            /* font-size: 2em;  36px */
+            /* how much root element value x 2 */
+            font-size: 2rem;  /*24px*/
+            border: 2px solid red;
+            width: 50%;  /*make parent width 50%*/
+        }
+
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+        .mycont{
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            /* For desktop vmin = vh and for mobile vmin = vw */
+            /* width: 100vmin; */
+             width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <div>
+
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure labore laboriosam ipsam, ipsum ea hic?
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, recusandae?
+            </div>
+        </div>
+        </div>
+        <div class="mycont">
+            I am another container
+        </div>
+</body>
+</html>
