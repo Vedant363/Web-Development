@@ -6,12 +6,27 @@
     <title>Position</title>
     <style>
         /* Position is by default static */
+        /* Position of child is checked by ancestors */
         *{
             margin: 0;
             padding: 0;
         }
+        .box{
+            height: 633px;
+            padding: 3px;
+            margin: 3px;
+            width: 80vw;
+            border: 2px solid black;
+        }
         .box1{
             background-color: red;
+            /* position: sticky; */
+            /* position: fixed; */
+            top: 1px;
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
             /* position: absolute;
             top: 0px;
             left: 3px; */
@@ -24,25 +39,23 @@
         }
         .box3{
             background-color: greenyellow;
-            position: fixed;
+            /* position: fixed; */
             bottom: 0px;
             left: 5vw;
         }
         .box4{
             background-color: gold;
         }
-        .box{
-            height: 933px;
-            padding: 3px;
-            margin: 3px;
-            width: 80vw;
-            border: 2px solid black;
-        }
+        
         .parent{
+            /* Transform, filter, or perspective properties can also make an element appear as positioned */
             border: 2px solid black;
             padding: 43px;
             margin: 34px;
             /* position: absolute; */
+            /* transform: translate(0);
+            filter: invert(0);
+            perspective: 0em; */
         }
     </style>
 </head>
