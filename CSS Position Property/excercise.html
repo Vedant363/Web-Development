@@ -5,30 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Card</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: grey;
+        }
         .card{
+            background-color: white;
             margin: 30px;
-            padding: 20px;
+            padding: 10px;
             border: 2px solid black;
             border-radius: 10px;
-            height: 455px;
+            height: 475px;
             width: 255px;
         }
         .image{
             border-radius: 10px;
-            overflow: hidden;
+            box-sizing: border-box;
         }
-
         .image img{
-            height: 222px;
-            width: 225px;
+            border-radius: 10px;
         }
-        
+        .content{
+            padding: 10px;
+        }
+        .capsules{
+            padding: 10px 10px 0px 10px;
+        }
+        .capsules span{
+             border: 2px solid gray;
+             border-radius: 10px;
+             font-size: 13px;
+             padding: 4px;
+        }
     </style>
 </head>
 <body>
     <div class="card">
         <div class="image">
-           <img src="https://images.pexels.com/photos/7583935/pexels-photo-7583935.jpeg?auto=compress&cs=tinysrgb&w=600" alt="image">
+           <img src="https://images.pexels.com/photos/7583935/pexels-photo-7583935.jpeg?auto=compress&cs=tinysrgb&w=600" width="255" height="240" alt="image">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="content">
+            <h1>Lorem, ipsum.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi distinctio dolore dolor enim, adipisci ipsa!</p>
         </div>
     </div>
 </body>
